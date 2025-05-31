@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #eee;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .gallery-title {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 20px 20px 0 0;
+            border-top: 5px solid gold;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .photo {
+            background-color: #f4f4f4;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            overflow: hidden;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-title">Photo Gallery</div>
+        <div class="photo-grid">
+            <div class="photo"><img src="gallery-01.jpg" alt=""></div>
+            <div class="photo"><img src="gallery-02.jpg" alt=""></div>
+            <div class="photo"><img src="gallery-03.jpg" alt=""></div>
+            <div class="photo"><img src="" alt=""></div>
+            <div class="photo"><img src="" alt=""></div>
+            <div class="photo"><img src="" alt=""></div>
+            <div class="photo"><img src="gallery-04.jpg" alt=""></div>
+            <div class="photo"><img src="gallery-05.jpg" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>

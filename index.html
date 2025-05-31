@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Dashboard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family : Arial,sans-serif;
+            background-color: #f5f6fc;
+        }
+        .container{
+            display: flex;
+            height : 100vh;
+        }
+        .sidebar{
+            width: 250px;
+            padding: 20px;
+            background: linear-gradient(to bottom right, #34d058, #28a745);
+            color:white;
+        }
+        .sidebar h2{
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        .sidebar a{
+            display: block;
+            background-color:rgba(255, 255, 255, 0.2) ;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s , transform  0.3s;
+        }
+        .sidebar a:hover{
+            background-color: rgba(255, 255, 255, 0.4) ;
+            transform: scale(1.2);
+        }
+        .main{
+            flex:1;
+            padding : 30px;
+            background-color: #f4f5fa;
+        }
+        .main h1{
+            color: #28a745; 
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:30px;
+            padding: 0 50px;
+        }
+        .card{
+            background-color: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        .card h2{
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .card p{
+            color: #28a745;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>School Dashoard</h2>
+            <a href="#">Dashboard</a>
+            <a href="#">Students</a>
+            <a href="#">Teachers</a>
+            <a href="#">Classes</a>
+            <a href="#">Exams</a>
+            <a href="#">Library</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="main">
+            <h1>Welcome to the school dashboard</h1>
+            <div class="cards">
+                <div class="card">
+                    <h2>Total Students</h2>
+                    <p>500</p>
+                </div>
+                <div class="card">
+                    <h2>Total Teachers</h2>
+                    <p>50</p>
+                </div>
+                <div class="card">
+                    <h2>Classes</h2>
+                    <p>20</p>
+                </div>
+                <div class="card">
+                    <h2>Upcoming Exams</h2>
+                    <p>5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

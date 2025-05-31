@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music World</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://img.freepik.com/free-vector/glowing-musical-pentagram-background-with-sound-notes_1017-31220.jpg?semt=ais_hybrid&w=740') no-repeat center center/cover;
+      color: white;
+    }
+
+    header {
+      margin-top: 15px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 20px 50px;
+      font-size: 32px;
+      font-weight: bold;
+      border: 0.5px dashed #ccc;
+      border-radius: 20px;
+      margin-left: 10px;
+      width: 96%;
+    }
+
+    .nav-wrapper {
+      background-color: rgb(172, 172, 183);
+      margin: 20px 10px 0 10px;
+      border-radius: 40px;
+      padding: 5px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: left;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-left: 15px;
+    }
+
+    nav a {
+      color: white;
+      background-color: #444;
+      margin: 5px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #666;
+      transform: scale(1.1);
+    }
+    .container{
+        background-color: rgba(0, 0, 0, 0.3);
+        padding-top: 10px;
+        border: 0.5px dashed #ccc;
+        border-radius: 20px;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    .section {
+      margin: 30px;
+      border: 2px dashed white;
+      padding: 0px;
+      border-radius: 15px;
+    }
+
+    .section h2 {
+      margin-top: 15px;
+      margin-bottom: 0px;
+      padding-bottom: 10px;
+      padding-left: 20px;;
+      font-size: 20px;
+      border-bottom: 2px solid rgb(172, 172, 183);
+    }
+
+    .album-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      overflow-x: auto;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .album-list img {
+      width: 120px;
+      height: 180px;
+      border-radius: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .album-list img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+<body>
+
+  <header>Music World</header>
+
+  <div class="nav-wrapper">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Category</a>
+      <a href="#">Production</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Login</a>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="section">
+    <h2>→ Latest Album ...</h2>
+    <div class="album-list">
+      <img src="https://a10.gaanacdn.com/gn_img/albums/kGxbn03y4r/xbn1kZ9aWy/size_m.jpg" alt="Album 1">
+      <img src="https://a10.gaanacdn.com/gn_img/albums/MmqK5EKwRO/qK5ZXQME3w/size_m.jpg" alt="Album 2">
+      <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00441505-kqdaqxgfgw-portrait.jpg" alt="Album 3">
+      <img src="https://static.toiimg.com/photo/118456342.cms" alt="Album 4">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>→ TOP 3 Songs ...</h2>
+    <div class="album-list">
+      <img src="https://i.scdn.co/image/ab67616d0000b27372a77d038887cdc425f5ee55" alt="Song 1">
+      <img src="https://c.saavncdn.com/162/ANIMAL-TELUGU-Telugu-2023-20231125141003-500x500.jpg" alt="Song 2">
+      <img src="https://s.saregama.tech/image/c/fh_200/a/2d/8a/aa_seetadevi_navvula_lofi_flip_ott_1440_1718285239.jpg" alt="Song 3">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>→ Top 2 Artist ...</h2>
+    <div class="album-list">
+      <img src="https://representmgmt.in/storage/uploads/detail_page_img/579991763_1689748099.jpeg" alt="Artist 1">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAw1_00y4YhsVN6tmQly3a-tO1igM8i1-K8Q&s" alt="Artist 2">
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
